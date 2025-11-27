@@ -69,9 +69,10 @@ This application helps financial institutions assess credit risk by analyzing va
 
 ## 📁 Project Structure
 
-bash
-git clone <repository-url>
-cd ml-project-credit-risk-model
+```bash
+   git clone <repository-url>
+   cd ml-project-credit-risk-model
+ ```
 
 
 2. **Create a virtual environment** (recommended):come
