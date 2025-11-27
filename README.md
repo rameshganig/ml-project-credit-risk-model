@@ -44,7 +44,7 @@ This application helps financial institutions assess credit risk by analyzing va
    ```
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    3. **Install dependencies**:
-  ```bash
+    ```bash
    pip install -r requirements.txt
     ```
    ## 🎯 Usage
