@@ -22,8 +22,7 @@ with row1[2]:
 # Calculate Loan to Income Ratio and display it
 loan_to_income_ratio = loan_amount / income if income > 0 else 0
 with row2[0]:
-    st.text("Loan to Income Ratio:")
-    st.text(f"{loan_to_income_ratio:.2f}")  # Display as a text field
+    st.write(f"**Loan to Income Ratio:** {loan_to_income_ratio:.2f}")
 
 # Assign inputs to the remaining controls
 with row2[1]:

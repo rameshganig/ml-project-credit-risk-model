@@ -135,6 +135,49 @@ Key libraries used:
 
 ## 📈 Model Performance
 
+### 📊 Model Performance Summary
+
+The classification model demonstrates strong overall performance with a focus on identifying minority-class events accurately.
+
+✔ **Best Macro F1 Score: 0.7875**
+
+#### Classification Report
+- **Accuracy: 93%**
+- **Majority Class (0):**
+  - Precision: 0.99
+  - Recall: 0.93
+  - F1-score: 0.96
+- **Minority Class (1):**
+  - Precision: 0.56
+  - Recall: 0.95
+  - F1-score: 0.71
+
+The model shows excellent recall for the minority class, making it suitable for risk-sensitive applications.
+
+---
+
+#### 📈 ROC–AUC Score: 0.98
+
+The model achieves a high AUC, indicating strong separability between the two classes.
+
+---
+
+#### 📊 KS (Kolmogorov–Smirnov) Statistic
+
+- **Maximum KS: ~86%**
+- Indicates strong discriminatory power between events and non-events.
+- High KS in the top deciles confirms effective ranking of high-risk predictions.
+
+---
+
+#### 🔟 Decile Analysis
+
+- **Decile 0 (highest-risk bucket)** captures ~84% of all events, showing excellent concentration.
+- Event probability sharply drops across deciles, confirming strong model calibration.
+- Lower deciles contain predominantly non-events, validating separation.
+
+### Technical Details
+
 The credit risk model has been trained and validated on historical loan data with the following characteristics:
 - Uses logistic regression for binary classification
 - Features preprocessing with MinMax scaling
@@ -153,6 +196,7 @@ The credit risk model has been trained and validated on historical loan data wit
 3. Make your changes
 4. Add tests if applicable
 5. Submit a pull request
+
 
 ## 📄 License
 
