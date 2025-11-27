@@ -73,19 +73,28 @@ This application helps financial institutions assess credit risk by analyzing va
 ```
 ml-project-credit-risk-model/
 │
-├── main.py # Streamlit web application
-├── prediction_helper.py # ML prediction logic and utilities
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
+├── main.py                           # Streamlit web application
+├── prediction_helper.py              # ML prediction logic and utilities
+├── credit_risk_model.ipynb           # Jupyter notebook (model training/development)
+├── requirements.txt                  # Python dependencies
+├── README.md                         # Project documentation
 │
 ├── artifacts/
-│ └── model_data.joblib # Trained model and preprocessing components
+│   └── model_data.joblib            # Trained model and preprocessing components
 │
-├── mlruns/ # MLflow experiment tracking
-│ ├── 0/
-│ └── models/
+├── dataset/
+│   ├── bureau_data.csv              # Bureau/credit bureau data
+│   ├── customers.csv                # Customer information
+│   └── loans.csv                    # Loan application data
 │
-└── pycache/ # Python cache files
+├── mlruns/                          # MLflow experiment tracking
+│   ├── 0/
+│   │   ├── meta.yaml
+│   │   └── tags/
+│   │       └── mlflow.experimentKind
+│   └── models/                      # (currently empty)
+│
+└── __pycache__/  
 ```
 ---
 
