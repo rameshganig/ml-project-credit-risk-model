@@ -179,7 +179,10 @@ streamlit run main.py
    - Credit score (300-900 range)
    - Risk rating category
 
-## 📁 Project Structure
+---
+## 📁 File Structure
+
+```
 ml-project-credit-risk-model/
 │
 ├── main.py # Streamlit web application
@@ -195,7 +198,8 @@ ml-project-credit-risk-model/
 │ └── models/
 │
 └── pycache/ # Python cache files
-
+```
+---
 
 ## 🔍 Model Details
 
