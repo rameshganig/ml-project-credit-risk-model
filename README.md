@@ -4,7 +4,34 @@ A machine learning-powered web application for credit risk assessment and scorin
 
 ## 📊 Overview
 
-This application helps financial institutions assess credit risk by analyzing various customer financial parameters and generating credit scores with risk ratings. The system uses a trained machine learning model to predict the probability of default and provides actionable credit scores ranging from 300 to 900.
+This project focuses on building a Credit Risk Classification Model as part of my AI/ML coursework. The goal was to predict whether a customer is likely to default based on multidimensional financial and credit-history attributes. The project provided hands-on experience in both machine learning techniques and financial risk modeling concepts commonly used in the credit industry.
+
+This application helps financial institutions assess credit risk by analyzing various customer financial parameters and generating credit scores with risk ratings. It uses a trained machine learning model to predict the probability of default and provides actionable credit scores ranging from 300 to 900.
+
+### 🔧 Technical & Analytical Skills Applied
+
+- **Exploratory Data Analysis (EDA)**: Used box plots, histograms, KDE plots, and correlation analysis to understand data distribution, behavior, and key relationships.
+
+- **Feature Engineering**:
+  - Handled missing data
+  - Created derived features such as average DPD, delinquency ratio, and credit utilization per income
+  - Performed multicollinearity checks using VIF
+  - Conducted WOE & IV analysis for feature strength assessment
+
+- **Model Development**:
+  - Built and compared multiple classifiers: Logistic Regression, Random Forest, XGBoost
+  - Performed hyperparameter tuning with RandomizedSearchCV
+  - Applied SMOTETomek for class imbalance correction
+  - Further optimized the best model using Optuna (Bayesian optimization)
+
+- **Model Evaluation**:
+  - Assessed performance using ROC Curve, F1-score, KS Statistic, and Rank Ordering
+  - Used SHAP summary and force plots for explainability and model interpretability
+
+- **Deployment**:
+  - Built an interactive MVP using Streamlit
+  - Version-controlled and published on GitHub for future improvements
+
 
 ## 🚀 Features
 
