@@ -34,12 +34,14 @@ This application helps financial institutions assess credit risk by analyzing va
 ## 🔧 Installation
 
 1. **Clone the repository**:
-  
+    ```bash
    git clone <repository-url>
    cd ml-project-credit-risk-model
+    ```
    2. **Create a virtual environment** (recommended):
-  
+    ```bash
    python -m venv venv
+   ```
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    3. **Install dependencies**:
   
@@ -47,8 +49,9 @@ This application helps financial institutions assess credit risk by analyzing va
    ## 🎯 Usage
 
 1. **Run the application**:
-  
+    ```bash
    streamlit run main.py
+    ```
    2. **Access the web interface**:
    Open your browser and navigate to `http://localhost:8501`
 
